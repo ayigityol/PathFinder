@@ -1,0 +1,31 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ayigityol.pathfinder.MapsActivity" />
+
+    <include layout="@layout/bottom_sheet" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/findPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/places_ic_search"
+        android:clickable="true"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchor="@+id/bottomSheet"
+        app:layout_anchorGravity="top|end"
+        app:rippleColor="@color/colorPrimaryLight"
+        app:srcCompat="@mipmap/ic_directions" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+

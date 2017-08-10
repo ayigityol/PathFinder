@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Path Finder</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_search_history">Search History</string>
+    <string name="error_search_history">No recent searches found.</string>
+    <string name="hint_from">From</string>
+    <string name="hint_to">To</string>
+</resources>
